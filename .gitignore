@@ -4,23 +4,69 @@ __pycache__/
 *$py.class
 *.so
 .Python
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
 env/
 venv/
+.venv/
 ENV/
 env.bak/
 venv.bak/
 
-# Exports
+# Dash specific
+.plotly/
+
+# Data exports
 exports/
 *.xlsx
+*.xls
+*.csv
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
 *.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+
+# Config files with secrets (if any)
+config_secret.py
+.env
+.env.local
+.env.production
+
+# Test files
+test_*.xlsx
+MANUAL_TEST_*
+
+# Backup files
+*.bak
+*.backup
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Package files
+*.egg-info/
+dist/
+build/
