@@ -22,6 +22,9 @@ warnings.filterwarnings("ignore")
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP])
 app.title = "Dashboard Energético XM - Colombia"
 
+# Exponer el servidor Flask para producción
+server = app.server
+
 # Inicializar API XM
 try:
     objetoAPI = ReadDB()

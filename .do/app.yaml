@@ -1,0 +1,17 @@
+name: dashboard-energia-xm
+services:
+- name: web
+  source_dir: /
+  github:
+    repo: tu-usuario/dashboard-energia-xm
+    branch: main
+  run_command: gunicorn app:server
+  environment_slug: python
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 8080
+  envs:
+  - key: DASH_DEBUG
+    value: "false"
+  - key: PORT
+    value: "8080"
