@@ -10,12 +10,9 @@ import sys
 import os
 from io import BytesIO
 import base64
-
-# Agregar el path de la API_XM al sistema
-sys.path.append('/home/melissa/Documentos/dashboard-energia-xm/API_XM')
-from pydataxm.pydataxm import ReadDB
-
 import warnings
+
+from pydataxm.pydataxm import ReadDB
 warnings.filterwarnings("ignore")
 
 # Inicializar la aplicación Dash con tema Bootstrap
@@ -666,7 +663,7 @@ if __name__ == "__main__":
     print("⚠️  Ejecutando en modo desarrollo")
     print("🔧 Para producción usa: python server.py")
     
-    app.run_server(
+    app.run(
         debug=debug_mode, 
         host="0.0.0.0", 
         port=port,
