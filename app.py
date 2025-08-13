@@ -657,13 +657,18 @@ def create_stats_summary(data):
     ])
 
 if __name__ == "__main__":
+    # Esta parte solo se ejecuta si se llama directamente app.py
+    # Para producción, usa server.py
     import os
-    # Para producción (Heroku, Railway, etc.)
     port = int(os.environ.get("PORT", 8052))
-    debug_mode = os.environ.get("DASH_DEBUG", "True").lower() == "true"
+    debug_mode = os.environ.get("DASH_DEBUG", "False").lower() == "true"
     
-    app.run(
+    print("⚠️  Ejecutando en modo desarrollo")
+    print("🔧 Para producción usa: python server.py")
+    
+    app.run_server(
         debug=debug_mode, 
         host="0.0.0.0", 
-        port=port
+        port=port,
+        dev_tools_hot_reload=debug_mode
     )
