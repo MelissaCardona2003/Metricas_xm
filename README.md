@@ -10,15 +10,6 @@ Dashboard interactivo para visualizar y exportar datos del mercado energético c
 - ✅ **Interfaz moderna** con Bootstrap
 - ✅ **Responsive** para móviles y desktop
 
-## 🚀 Despliegue en la Nube
-
-### Heroku (Recomendado)
-
-1. **Crea cuenta en Heroku**: https://heroku.com
-2. **Instala Heroku CLI**: https://devcenter.heroku.com/articles/heroku-cli
-3. **Clona este repositorio**
-4. **Ejecuta estos comandos**:
-
 ```bash
 # Inicializar git (si no está)
 git init
