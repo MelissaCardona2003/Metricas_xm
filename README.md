@@ -10,36 +10,6 @@ Dashboard interactivo para visualizar y exportar datos del mercado energético c
 - ✅ **Interfaz moderna** con Bootstrap
 - ✅ **Responsive** para móviles y desktop
 
-```bash
-# Inicializar git (si no está)
-git init
-git add .
-git commit -m "Dashboard XM Colombia"
-
-# Crear app en Heroku
-heroku create tu-dashboard-xm-colombia
-
-# Configurar variables de entorno para producción
-heroku config:set DASH_DEBUG=false
-
-# Desplegar
-git push heroku main
-```
-
-### Railway.app
-
-1. Conecta tu GitHub en: https://railway.app
-2. Selecciona este repositorio
-3. ¡Railway despliega automáticamente!
-
-### Render.com
-
-1. Conecta GitHub en: https://render.com
-2. Crea un "Web Service"
-3. Usa estos settings:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `python app.py`
-
 ## � Ejecutar Localmente
 
 ```bash
